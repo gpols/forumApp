@@ -5,18 +5,34 @@
     <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
 <body>
+    <!-- Form for searching posts based on titles -->
     <form action="/search_posts" method="GET">
-        <p>What posts are you looking for?</p>
+        <!-- Prompt for the user to input their search criteria -->
+        <h1>What posts are you looking for?</h1>
+        
+        <!-- Explanation of the search criteria -->
+        <p>Search based on Titles</p>
+        
+        <!-- Input box for entering the search keyword -->
         <input id="search-box" type="text" name="keyword" value="Default">
+        
+        <!-- Submit button to initiate the search -->
         <input type="submit" value="Search">
     </form>
+    
+    <!-- Heading for displaying search results -->
     <h2>Search result:</h2>
-    <!-- conditions if the result is found or not -->
+    
+    <!-- Conditions to check if there is a message or search results -->
     <% if (message) { %>
+        <!-- Display a message if no results are found -->
         <p><%= message %></p>
     <% } else { %>
+        <!-- Display the list of search results -->
         <ul>
+            <!-- Loop through each post in the result array -->
             <% for (let post of result) { %>
+                <!-- Display the post title -->
                 <li><%= post.post_title %></li>
             <% } %>
         </ul>

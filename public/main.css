@@ -1,71 +1,75 @@
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: rgb(83, 63, 37);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: blanchedalmond;
 }
 
+/* Headings */
+h1,
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: rgb(83, 63, 37);
+  font-size: 20px;
+  color: rgb(83, 63, 37);
+  text-align: center;
 }
 
+/* Paragraphs */
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+  color: black;
 }
 
-a:link {
-    color: rgb(83, 63, 37);
-    text-decoration: none;
-    padding:5px;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: rgb(83, 63, 37);
-    text-decoration: none;
-    padding:5px;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: rgb(240, 141, 105);
-    padding:5px;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-    text-decoration: none;
-    padding:5px;
-  }
-/* Reset default list styles */
+/* Links */
+a:link,
+a:visited {
+  color: rgb(83, 63, 37);
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(240, 141, 105);
+  padding: 5px;
+}
+
+/* Lists */
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Style each list item */
+/* List Items */
 li {
   border: 1px solid #ddd;
   margin-bottom: 10px;
   padding: 10px;
   display: flex;
-  flex-direction: column; /* Display child elements in a column */
+  flex-direction: column;
+  /* Display child elements in a column */
 }
 
-/* Style specific elements within each list item */
+/* Specific Elements within List Items */
 li span {
-  margin-bottom: 5px; /* Add some spacing between lines */
+  margin-bottom: 5px;
+  /* Add some spacing between lines */
 }
 
-/* Add some spacing between elements within each list item */
 li p {
   margin: 5px 0;
 }
 
+/* About Section */
+.about {
+  width: 500px;
+  margin: auto; /* Set margin to auto to center horizontally */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.about p {
+  margin-top: 20px;
+  text-align: center;
+}

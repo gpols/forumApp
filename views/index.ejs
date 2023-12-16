@@ -2,20 +2,33 @@
 <html>
 
 <head>
+  <!-- Set the title of the document to "Mushroome" -->
   <title>Mushroome</title>
   <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
 
 <body>
-  <h1> Home</h1>
+  <!-- Display the main heading with the forum name -->
+  <h1> 🍄 Welcome to  <%= forumName %> 🍄 </h1>
 
-<form method="POST" action="/registered">
-  <p>First name: <input id="first" type="text" name="first" value="first name" /></p>
-  <p>Last name: <input id="last" type="text" name="last" value="last name" /></p>
-  <p>Email: <input id="email" type="email" name="email" value="email" /></p>
-  <input type="submit" value="Register" />
-</form>
+  <!-- Welcome message and registration form -->
+  <p> Join our mushroom-loving community! Register now to unlock a world of fungi fascination!</p>
+  <form method="POST" action="/registered">
+    <!-- Input field for the first name with a default value -->
+    <p>First name: <input id="first" type="text" name="first" value="first name" /></p>
+    
+    <!-- Input field for the last name with a default value -->
+    <p>Last name: <input id="last" type="text" name="last" value="last name" /></p>
+    
+    <!-- Input field for the email with a default value -->
+    <p>Email: <input id="email" type="email" name="email" value="email" /></p>
+    
+    <!-- Submit button to register -->
+    <input type="submit" value="Register" />
+  </form>
 
+  <!-- Navigation links to various pages -->
+  <p> Check out our pages....</p>
   <p><a href="about">About</a></p>
   <p><a href="posts">Posts</a></p>
   <p><a href="topics"> Topics</a></p>

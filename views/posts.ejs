@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!-- Set the title of the page, dynamically using the shopName variable -->
-  <title>Post</title>
-  <!-- Link to an external stylesheet (main.css) for styling -->
+  <title>Posts</title>
   <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
 
 <body>
-  <!-- Display a heading with the shopName variable -->
   <h1> Posts</h1>
-
-  <!-- Display the list of existing users -->
+  <!-- Display the list of existing posts -->
   <ul>
+    <!-- Loop through each post in the existingPosts array -->
     <% for(let post of existingPosts){ %>
       <li>
+        <!-- Display the Post ID -->
         <span class="post-id">Post ID: <%= post.post_id %></span>
+        
+        <!-- Display the User's name -->
         <span class="user-name">User: <%= post.first_name %><%= post.last_name %></span>
+        
+        <!-- Display the Topic name -->
         <span class="topic">Topic: <%= post.topic_name %></span>
+        
+        <!-- Display the Post title -->
         <span class="title">Title: <%= post.post_title %></span>
+        
+        <!-- Display the Post content -->
         <span class="post-content">Post: <%= post.post_content %></span>
       </li>
-      <% } %>
+    <% } %>
   </ul>
 
 </body>

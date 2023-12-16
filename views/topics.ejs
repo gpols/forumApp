@@ -2,9 +2,7 @@
 <html>
 
 <head>
-  <!-- Set the title of the page, dynamically using the shopName variable -->
   <title> Topics</title>
-  <!-- Link to an external stylesheet (main.css) for styling -->
   <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
 
@@ -14,9 +12,12 @@
   <!-- Display the list of existing users -->
   <ul>
     <% for(let topic of availableTopics){ %>
-      <li>id: <%= topic.topic_id %> Name: <%= topic.topic_name %></li>
-    <% } %>
+      <li>
+        ID: <%= topic.topic_id %> Name: <%= topic.topic_name %>
+      </li>
+      <% } %>
   </ul>
 
 </body>
+
 </html>

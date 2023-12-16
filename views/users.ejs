@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!-- Set the title of the page, dynamically using the forumName variable -->
-  <title></title>
   <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
 
@@ -14,7 +11,7 @@
   <!-- Display the list of existing users -->
   <ul>
     <% for(let user of existingUsers){ %>
-      <li>id: <%= user.user_id %> Name: <%= user.first_name %>  <%= user.last_name %> email: <%= user.email %></li>
+      <li>Name: <%= user.first_name %>  <%= user.last_name %></li>
     <% } %>
   </ul>
 

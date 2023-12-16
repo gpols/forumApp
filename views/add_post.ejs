@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add Post <%= forumName %></title>
+    <title>Add a post</title>
     <link rel="stylesheet" type="text/css" href="/main.css" />
   </head>
   <body>
-    <h1>Add Post <%= forumName %></h1>
+    <!-- Display the page heading with the forum name -->
+    <h1>Add a post in <%= forumName %></h1>
+    
+    <!-- Create a form for adding a new post -->
     <form method="POST" action="/add_post">
+      <!-- Input field for User ID, requiring a number -->
       <p>User ID: <input id="user_id" type="number" name="user_id" required /></p>
+      
+      <!-- Input field for Topic ID, requiring a number -->
       <p>Topic ID: <input id="topic_id" type="number" name="topic_id" required /></p>
+      
+      <!-- Input field for the post title, requiring text -->
       <p>Title: <input id="post_title" type="text" name="post_title" required /></p>
+      
+      <!-- Textarea for the post content, requiring input -->
       <p>Post Content: <textarea id="post_content" name="post_content" required></textarea></p>
+      
+      <!-- Submit button to add the post -->
       <input type="submit" value="Add Post" />
     </form>
   </body>
