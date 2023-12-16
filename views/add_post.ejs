@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>add post <%=forumName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Add Post <%=forumName%></h1>
+        <form method="POST" action="/postadded">
+            <p>User name : <input id="user-id" type="number" name="user_id"/></p>
+            <p>Topic Name : <input id="topic_id" type="number" name="topic_id"/></p>
+            <p>post text<input id="text" type="text" name="text"/></p>
+            <input type="submit" value="Add Post" />
+          </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <form action="/search_posts" method="GET">
+        <p>What posts are you looking for?</p>
+        <input id="search-box" type="text" name="keyword" value="Default">
+        <input type="submit" value="Search">
+    </form>
+    <h2>Search result:</h2>
+    <!-- conditions if the result is found or not -->
+    <% if (message) { %>
+        <p><%= message %></p>
+    <% } else { %>
+        <ul>
+            <% for (let post of result) { %>
+                <li><%= post.post_title %></li>
+            <% } %>
+        </ul>
+    <% } %>
+</body>
+</html>
