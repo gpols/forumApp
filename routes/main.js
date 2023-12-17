@@ -94,13 +94,13 @@ module.exports = function (app, forumData) {
   })
 
   // Route for the registration page
-  app.get('/register', function (req, res) {
+  app.get('/', function (req, res) {
     // Render the 'register.ejs' template with forumData
-    res.render('register.ejs', forumData)
+    res.render('index.ejs', forumData)
   })
 
   // Route for handling registration form submission
-  app.post('/register', (req, res) => {
+  app.post('/', (req, res) => {
     // Get user registration data from the request body
     let { first, last, email } = req.body
 
